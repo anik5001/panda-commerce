@@ -2,16 +2,50 @@
  box-sizing: border-box;
  /* margin: 0 auto; */
  font-family: "Open Sans", sans-serif;
+ scroll-behavior: smooth;
 }
 .container{
   max-width: 1280px;
  margin: 0 auto;
  
 }
+/* dropdown */
+.product-li{
+  position: relative;
+  
+}
+.dropdown-nav-items{
+  position: absolute;
+  top: 30%;
+  left:-50px;
+  padding: 5px 0;
+  list-style: none;
+  background-color: white;
+  text-align: center;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+  visibility: hidden;
+  /* margin-top: 10px; */
+
+
+}
+.dropdown-nav-items li{
+  margin: 5px 0;
+}
+.product-li:hover .dropdown-nav-items{
+  visibility: visible;
+  top: 100%;
+  transition:0.5s ;
+}
+
+/* navbar section */
 nav{
   display: flex;
   justify-content: space-between;
   padding:30px;
+  position: sticky;
+  top: -30px;
+  background:white;
   
 }
 .search-parent{
@@ -243,6 +277,7 @@ footer{
   height: 60px;
   text-align: center;
   position: relative;
+  border: none;
 }
 
 .footer-section button {

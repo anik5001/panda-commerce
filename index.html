@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Document</title>
+  <title class="title">Panda commerce</title>
+   <link rel="icon" type="image/x-icon" href="./images/logo.png">
 <!-- poppins font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,8 @@
   <main>
           <nav class="container">
             <figure>
-              <img src="./images/logo.png" alt="">
+              <a href="index.html"><img src="./images/logo.png" alt=""></a>
+              
             </figure>
                
                <div class="search-parent">
@@ -28,10 +30,22 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                </div>
                <ul class="nav-items">
-                <li><a href="">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="product-li"><a href="">Product<i class="fa-solid fa-angle-down"></i>
+                  <ul class="dropdown-nav-items">
+                    <li>product 1</li>
+                    <li>product 2</li>
+                    <li>product 3</li>
+                    <li>product 4</li>
+                    <li>product 5</li>
+                    
+
+                  </ul>
+                </a></li>
+                <li><a href="#backpack-section">Backpack</a></li>
+                <li><a href="#contact-us">Contact Us</a>
+                  <link rel="shortcut icon" href="./images/bags/bag-1.png" type="image/x-icon">
+                </li>
                </ul>
           </nav>
   
@@ -98,7 +112,8 @@
      </div>
 
     </div>
-   <div class="shoes-section container">
+    <!-- backpack section -->
+   <div class="shoes-section container" id="backpack-section">
     <div class="shoes-heading">
     <h2>Backpack</h2>
     <h3>See All</h3>
@@ -133,7 +148,7 @@
 
   </main>
   <footer>
-         <section class="footer-section container">
+         <section class="footer-section container" id="contact-us">
            <h1>LET'S STAY IN TOUCH</h1>
            <p>Get updates on sales specials and more</p>
            <input placeholder="
