@@ -74,9 +74,11 @@ nav{
   display: flex;
   list-style: none;
   gap: 30px;
+  
 }
 .nav-items a{
   text-decoration:none;
+  color: #000000;
 }
 
 /* banner section */
@@ -285,5 +287,7 @@ footer{
 .footer-section button {
   position: absolute;
  left: 990px;
+ border-top-left-radius: none;
+
   
 }
